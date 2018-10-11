@@ -1,0 +1,85 @@
+footer, .fakeimg, section, aside, nav a, header {
+  padding: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: darkseagreen;
+  color: #333;
+}
+header.title {
+  color: tomato;
+}
+header.subtitle {
+  color: paleturquoise;
+}
+
+nav {
+  display: flex;
+  background-color: #333;
+}
+nav a {
+  color: tomato;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  background-color: lightgrey;
+}
+nav a.active {
+  color: yellow;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 22.9166666667%;
+}
+@media screen and (max-width: 700px) {
+  aside {
+    width: 100%;
+  }
+}
+
+section {
+  width: 77.0833333333%;
+}
+@media screen and (max-width: 700px) {
+  section {
+    width: 100%;
+  }
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+.fakeimg {
+  background-color: darkseagreen;
+  width: 100%;
+  height: 200px;
+  margin: 10px 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: paleturquoise;
+}
+
+@media screen and (max-width: 700px) {
+  main, nav {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
